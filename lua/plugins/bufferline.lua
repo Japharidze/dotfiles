@@ -1,4 +1,4 @@
 return {
-  -- Navigating buffers via Telescope instead of tab bar
+  -- Navigating buffers via snacks picker instead of tab bar
   { "akinsho/bufferline.nvim", enabled = false },
 }
