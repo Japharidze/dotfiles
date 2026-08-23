@@ -11,7 +11,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
     local fn = vim.fn.argv(0) --[[@as string]]
     if vim.fn.isdirectory(fn) == 1 then
-      Snacks.picker.files()
+      Snacks.picker.files({ cwd = LazyVim.root() })
     end
   end,
 })
