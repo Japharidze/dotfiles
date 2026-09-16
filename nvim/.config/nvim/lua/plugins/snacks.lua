@@ -5,6 +5,11 @@ return {
       explorer = {
         replace_netrw = false, -- Prevents opening when launching nvim with a directory
       },
+      picker = {
+        sources = {
+          explorer = { hidden = true },
+        }
+      }
     },
   },
 }
