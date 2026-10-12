@@ -2,27 +2,6 @@ return {
   "folke/flash.nvim",
   opts = {},
   keys = {
-    -- Disable default s/S mappings
-    { "s", mode = { "n", "x", "o" }, false },
-    { "S", mode = { "n", "x", "o" }, false },
-
-    -- Remap to gs/gS
-    {
-      "gs",
-      mode = { "n", "x", "o" },
-      function()
-        require("flash").jump()
-      end,
-      desc = "Flash",
-    },
-    {
-      "gS",
-      mode = { "n", "x", "o" },
-      function()
-        require("flash").treesitter()
-      end,
-      desc = "Flash Treesitter",
-    },
     {
       "r",
       mode = "o",
